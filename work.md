@@ -29,7 +29,7 @@ ssh-keygen -t rsa -C '邮箱'
 1.git remote add origin https://giothub.com/...
 //本地添加origin(名字)-远程库名字(https://github.com/...)
 <上面操作之后，以后就可以用(origin)代替远程github库名字>
-    例如：git push origin(远程github库别名) master(本地的分支)
+    例如：git push origin(远程github库别名) master(远程库的分支)
 ~~~
 
 ##### 5.Git版本跳跃
