@@ -104,6 +104,14 @@ git  reset HEAD a.txt  //【之后的多次提交】只删除(本地库或则暂
 
 
 
+##### 11.rebase
+
+~~~ java
+git rebase master    //在子分支上面操作，目的将子分支的根节点想后面一一位
+~~~
+
+
+
 
 
 
