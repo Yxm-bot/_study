@@ -82,7 +82,7 @@ ssh-keygen -t rsa -C '邮箱'
 ~~~ java
 git rm a.txt      //本地库和工作区同时删除文件a.txt
 git rm --cached readme.txt  //【第一次提交时】只删除(本地库或则暂存区)里面的文件，工作区不删除  
-git  reset HEAD a.txt  //【之后的多次提交】只删除(本地库或则暂存区)里面的文件，工作区不删除
+git  reset HEAD a.txt  //【之后的多次提交】只删除(本地库或则暂存区)里面的文件，工作区不删除.【会撤销从上一次提交（commit）之后的一些操作】
  git checkout -- a.txt  //回到上一步修改 
 ~~~
 
