@@ -164,7 +164,7 @@ linux: yum install -y httpd         //联网状态下安装httpd
 2.ServiceName    www.apache.com                      //指定服务器域名
 3.DocumentRoot    "/var/www/htm"                     //默认网站路径
 4.<Directory />
-      内容                                  //里面的 '/'是指目录也可以是其他，用来                                            //设置该目录的一些访问权限
+                                     //里面的 '/'是指目录也可以是其他，用设置该目录的一些访问权限
   </Directory>
 5.DirectoryIndex   index.html index.html.var       //默认加载的首页的名称
 6.AddDefaultCharset      UTF-8         //服务器默认使用的编码
