@@ -144,9 +144,7 @@ linux: yum install -y httpd         //联网状态下安装httpd
 
 ##### 3.apache认证
 
-```
-![APACHE](https://user-images.githubusercontent.com/53646119/71499631-55efa780-289c-11ea-8a3e-112c076db9fc.png)
-```
+![](https://user-images.githubusercontent.com/53646119/71499631-55efa780-289c-11ea-8a3e-112c076db9fc.png)
 
 ##### 4.apache配置文件的讲解
 
