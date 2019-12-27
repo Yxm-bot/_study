@@ -1,4 +1,4 @@
-### git学习
+### 【git学习】
 
 ---
 
@@ -109,6 +109,68 @@ git  reset HEAD a.txt  //【之后的多次提交】只删除(本地库或则暂
 ~~~ java
 git rebase master    //在子分支上面操作，目的将子分支的根节点想后面一一位
 ~~~
+
+
+
+
+
+
+
+
+
+### 【apache】
+
+----------
+
+##### 1.apache安装
+
+~~~ java
+linux: yum install -y httpd         //联网状态下安装httpd
+       rpm -qa | grep  httpd        //查看是否安装了httpd
+~~~
+
+##### 2.apache 配置文件
+
+~~~~ java
+1.配置文件一般都保存在 /etc/httpd/  目录下
+2.apache是一个模块化设计的服务
+3./etc/httpd/run/http.pid       //里面存放的是apache的主进程号
+  /etc/http/conf.d              //每个模块都可以在conf.d下生成一个独立的模块配置文件
+4.ps aux | grep httpd           //查看apache进程
+5.which a.txt                   //查看a.txt文件位置
+6.httpd -M                      //查看模块
+7.httpd -l                       //查看哪些模块是被静态编译的
+~~~~
+
+##### 3.apache认证
+
+```
+![APACHE](https://user-images.githubusercontent.com/53646119/71499631-55efa780-289c-11ea-8a3e-112c076db9fc.png)
+```
+
+##### 4.apache配置文件的讲解
+
+> 全局配置： 
+
+~~~~ java
+1.ServerRoot  "etc/httpd"             //主配置文件路径
+2.Listen  80 或(192.168.1.1:80)                //服务器监听端口
+3.Include  conf.d/*.conf         //将conf.d/*.conf 里的模块配置文件从新加载到主配置文件里面
+
+~~~~
+
+> 主配置文件
+
+~~~~java
+1.ServiceAdmin   apache@linux.net                       //管理员的邮箱名
+2.ServiceName    www.apache.com                      //指定服务器域名
+3.DocumentRoot    "/var/www/htm"                     //默认网站路径
+4.<Directory />
+      内容                                  //里面的 '/'是指目录也可以是其他，用来                                            //设置该目录的一些访问权限
+  </Directory>
+5.DirectoryIndex   index.html index.html.var       //默认加载的首页的名称
+6.AddDefaultCharset      UTF-8         //服务器默认使用的编码
+~~~~
 
 
 
