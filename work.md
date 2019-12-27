@@ -146,7 +146,11 @@ linux: yum install -y httpd         //联网状态下安装httpd
 
 ![](https://user-images.githubusercontent.com/53646119/71499631-55efa780-289c-11ea-8a3e-112c076db9fc.png)
 
-##### 4.apache配置文件的讲解
+##### 4.区与域名虚拟主机配置
+
+![微信截图_20191227120326](https://user-images.githubusercontent.com/53646119/71500624-c1d40f00-28a0-11ea-9710-abc8838e5967.png)
+
+##### 5.apache配置文件的讲解
 
 > 全局配置： 
 
