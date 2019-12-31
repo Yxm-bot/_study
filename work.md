@@ -176,6 +176,32 @@ linux: yum install -y httpd         //联网状态下安装httpd
 
 
 
+### 【apache】加载【php】
+
+#####  1.php配置文件
+
+~~~ java
+1.php里面有两个配置文件
+    php.ini-development              //开发环境(使用电脑的性能不多)
+    php.ini-production               //生产环境
+~~~
+
+##### 2.让apache识别php
+
+![微信截图_20191231170336](https://user-images.githubusercontent.com/53646119/71616085-69c64100-2bef-11ea-9129-e705898c5f0b.png)
+
+~~~ java
+第一行：本机php所下载的位置
+第二行：为apache添加可识别的文件类型
+第三行：php配置文件路径
+~~~
+
+
+
+
+
+
+
 
 
 
