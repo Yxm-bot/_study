@@ -169,6 +169,7 @@ linux: yum install -y httpd         //联网状态下安装httpd
 ~~~~java
 1.ServiceAdmin   apache@linux.net                       //管理员的邮箱名
 2.ServiceName    www.apache.com                      //指定服务器域名
+    (在 /etc/hosts 配置下本机dns，就能用域名访问网站了)
 3.DocumentRoot    "/var/www/htm"                     //默认网站路径
 4.<Directory />
                                      //里面的 '/'是指目录也可以是其他，用设置该目录的一些访问权限
