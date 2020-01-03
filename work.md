@@ -140,6 +140,9 @@ linux: yum install -y httpd         //联网状态下安装httpd
 5.which a.txt                   //查看a.txt文件位置
 6.httpd -M                      //查看模块
 7.httpd -l                       //查看哪些模块是被静态编译的
+8.netstat   -tnl                  //查看端口是否开启
+9. httpd  -t                         //查看配置文件是否有语法错误
+    
 ~~~~
 
 ##### 3.apache认证
@@ -216,3 +219,4 @@ linux: yum install -y httpd         //联网状态下安装httpd
 
 
 
+ 
