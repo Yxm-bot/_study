@@ -161,7 +161,7 @@ linux: yum install -y httpd         //联网状态下安装httpd
 
 ![微信截图_20191227120326](https://user-images.githubusercontent.com/53646119/71500624-c1d40f00-28a0-11ea-9710-abc8838e5967.png)
 
->  1.apache虚拟主机配置流程[**虚拟主机**][https://www.cnblogs.com/zhao-yang/p/11755656.html] 
+>  1.apache虚拟主机配置流程[**虚拟主机**][https://blog.csdn.net/bmengmeng/article/details/90479114] 
 
 
 
