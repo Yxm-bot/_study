@@ -59,7 +59,7 @@ Update1秒内执行了N次，就是`transform.Translate(0, 0, Time.deltaTime \* 
 
 **一.成员变量:**
 
-**position：**在世界空间坐标transform的位置。
+position：在世界空间坐标transform的位置。
 **localPosition：**相对于父级的变换的位置。如果该变换没有父级，那么等同于Transform.position。
 **eulerAngles：**世界坐标系中的旋转（欧拉角）。
 **localEulerAngles：**相对于父级的变换旋转角度。
@@ -76,7 +76,7 @@ Update1秒内执行了N次，就是`transform.Translate(0, 0, Time.deltaTime \* 
 **childCount：**子对象数量。
 **lossyScale：**全局缩放比例（只读）。
 
-**二.函数**
+二.函数
 
 **Translate:**  用来移动物体的函数，非常常用的一个函数。
 
