@@ -46,35 +46,53 @@ Update1秒内执行了N次，就是`transform.Translate(0, 0, Time.deltaTime \* 
 **3.Vector3 属性**
 
 **forward** Vector3(0, 0, 1)的简码,       也就是向z轴。 
+
 **right** Vector3(1, 0, 0)的简码,             也就是向x轴。 
+
 **up** Vector3(0, 1, 0)的简码,                 也就是向y轴。 
+
 **zero** Vector3(0, 0, 0)的简码。 
+
 **one** 是 Vector3(1, 1, 1)的简码。 
+
 **Vector3.sqrMagnitude** 长度平方（只读的）
-
-
 
 **4.Transform 属性**   (Transform是一个类，用来管理该对象的位置，旋转，缩放的基础属性
                                       transform是一个Transform类的实例，直接指向这个对象的transform组件)
 
 **一.成员变量:**
 
-position：在世界空间坐标transform的位置。
-**localPosition：**相对于父级的变换的位置。如果该变换没有父级，那么等同于Transform.position。
-**eulerAngles：**世界坐标系中的旋转（欧拉角）。
-**localEulerAngles：**相对于父级的变换旋转角度。
-**right：**世界坐标系中的右方向。（世界空间坐标变换的红色轴。也就是x轴。）
-**up：**世界坐标系中的上方向。（在世界空间坐标变换的绿色轴。也就是y轴。）
-**forward：**世界坐标系中的前方向。（在世界空间坐标变换的蓝色轴。也就是z轴。）
-**rotation：**世界坐标系中的旋转（四元数）。
-**localRotation：**相对于父级的变换旋转角度。
-**localScale：**相对于父级的缩放比例。
-**parent：**父对象Transform组件。
-**worldToLocalMatrix：**矩阵变换的点从世界坐标转为自身坐标（只读）。
-**localToWorldMatrix：**矩阵变换的点从自身坐标转为世界坐标（只读）。
-**root：**对象层级关系中的根对象的Transform组件。
-**childCount：**子对象数量。
-**lossyScale：**全局缩放比例（只读）。
+**position：**在世界空间坐标transform的位置
+
+**localPosition：**相对于父级的变换的位置。如果该变换没有父级，那么等同于Transform.position
+
+**eulerAngles：**世界坐标系中的旋转（欧拉角）
+
+**localEulerAngles：**相对于父级的变换旋转角度
+
+**right：**世界坐标系中的右方向。（世界空间坐标变换的红色轴。也就是x轴）
+
+**up：**世界坐标系中的上方向。（在世界空间坐标变换的绿色轴。也就是y轴）
+
+**forward：**世界坐标系中的前方向。（在世界空间坐标变换的蓝色轴。也就是z轴）
+
+**rotation：**世界坐标系中的旋转（四元数）
+
+**localRotation：**相对于父级的变换旋转角度
+
+**localScale：**相对于父级的缩放比例
+
+**parent：**父对象Transform组件
+
+**worldToLocalMatrix：**矩阵变换的点从世界坐标转为自身坐标（只读）
+
+**localToWorldMatrix：**矩阵变换的点从自身坐标转为世界坐标（只读）
+
+**root：**对象层级关系中的根对象的Transform组件
+
+**childCount：**子对象数量
+
+**lossyScale：**全局缩放比例（只读）
 
 二.函数
 
@@ -84,7 +102,7 @@ position：在世界空间坐标transform的位置。
 public void Translate (translation : Vector3, relativeTo : Space = Space.Self) : void
 ```
 
-  把物体向translation方向移动，距离为translation.magnitude。 relativeTo表示这个移动的参考坐标系。
+  把物体向translation方向移动，距离为translation.magnitude。 relativeTo表示这个移动的参考坐标系
 
 
 
