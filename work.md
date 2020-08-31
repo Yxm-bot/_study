@@ -16,7 +16,9 @@
 git remote add origin https://github.com/...
 ~~~
 
-##### 2.推送到远程Git库
+##### 2.推送到远程Git库   --(先同步远程库)  
+
+// *git pull origin master --allow-unrelated-histories*
 
 ~~~ java
 git push -u origin master
